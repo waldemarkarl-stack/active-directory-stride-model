@@ -552,9 +552,19 @@
             "vertices": []
           }
         ]
+      },
+      {
+        "id": 2,
+        "title": "IT-Security-Weiterbildung",
+        "diagramType": "STRIDE",
+        "placeholder": "Neue STRIDE Diagramm Beschreibung",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.1-RC1",
+        "cells": [],
+        "description": "Modellierung Unternehmen + Vorstand-Text"
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 3,
     "reviewer": "",
     "threatTop": 7
   }
