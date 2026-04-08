@@ -1,0 +1,16 @@
+{
+  "version": "2.6.1-RC1",
+  "summary": {
+    "title": "Active Directory STRIDE Modell",
+    "owner": "waldemarkr-stack",
+    "description": "Threat Modeling für Active Directory Umgebung mit STRIDE",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
