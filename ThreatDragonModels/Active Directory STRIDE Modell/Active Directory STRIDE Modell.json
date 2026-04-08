@@ -19,11 +19,11 @@
         "cells": [
           {
             "position": {
-              "x": 680,
+              "x": 670,
               "y": 305
             },
             "size": {
-              "width": 90,
+              "width": 80,
               "height": 50
             },
             "attrs": {
@@ -411,86 +411,6 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "48e351d6-33a6-43f1-8213-61c9c437a54e",
-                  "title": "User Spoofing",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Veröffentlichung von Informationen",
-                  "description": "Angreifer gibt sich als Domain User aus (Spoofing)",
-                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                },
-                {
-                  "id": "7b8fa1a3-d141-499a-9f54-291217f0b13f",
-                  "title": "Keylooging",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Veröffentlichung von Informationen",
-                  "description": "Passwort-Eingabe abfangen",
-                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 2,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "837e661f-14a8-466b-ad44-4ed142920001",
-            "source": {
-              "cell": "c37812f6-9578-49e5-9773-d08d5de10289",
-              "port": "d82acbea-78cc-4acb-b1b6-ebfc2c40c584"
-            },
-            "target": {
-              "cell": "0369ec04-cd03-4ff3-b722-0e1faba5c7a6",
-              "port": "8fdc23a6-59b0-443d-9f92-4961e7ef809b"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
                   "id": "3a1c470f-d4fa-403d-8d3f-bb7729d7307e",
                   "title": "Kerberos Tickjet Forgery",
                   "status": "Open",
@@ -550,12 +470,92 @@
               "port": "7d3f8d9b-cbe0-4ba8-ae37-de4be201f5c2"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "c02265e3-59ec-45c3-b57f-0b52d20d0f49",
+                  "title": "Credential Stuffing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Manipulation",
+                  "description": "Wiederverwendung geknackter Passwörter",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "105e5355-db1e-4f45-b0d3-766e71519b39",
+                  "title": "Keylogging",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Veröffentlichung von Informationen",
+                  "description": "Passwort-Eingabe abfangen",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "53538e75-bdee-4e73-ae45-9c704494b1ef",
+            "source": {
+              "cell": "c37812f6-9578-49e5-9773-d08d5de10289",
+              "port": "d82acbea-78cc-4acb-b1b6-ebfc2c40c584"
+            },
+            "target": {
+              "cell": "0369ec04-cd03-4ff3-b722-0e1faba5c7a6",
+              "port": "8fdc23a6-59b0-443d-9f92-4961e7ef809b"
+            },
+            "vertices": []
           }
         ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 7
   }
 }
